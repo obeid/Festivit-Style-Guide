@@ -1,0 +1,114 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import "base/base";
+
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+header {
+
+  // width: 100%;
+  // height: auto;
+  background-image: url('/images/blue_tint_x4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%,
+                         bottom;
+  margin-bottom: 4em;
+  padding: 2em;
+  div.container {
+    @include outer-container;
+
+
+    div.logo {
+      // background-image: url('/images/logo_w.svg');
+      // background-size: cover;
+      height: 2em;
+      @include span-columns(1);
+      @include omega();
+
+    }
+    div.intro {
+      @include span-columns(4);
+      @include shift(1);
+      color: white;
+      margin-top: .65em;
+      // @include omega();
+    }
+  }
+
+}
+
+div.container2 {
+  @include outer-container;
+
+  div.colorsText {
+    @include span-columns(3);
+
+  }
+  div.colors {
+
+    @include span-columns(9);
+    ul {
+      text-align: top;
+
+      li.block {
+        @include span-columns(3);
+        @include omega(4n);
+        background-color: yellow;
+        margin-bottom: 1em;
+        padding: 2em;
+      }
+    }
+  }
+
+}
+
+div.container3 {
+  @include outer-container;
+  margin-bottom: 2em;
+  color: white;
+  padding: 2em;
+  background-image: url('/images/audi.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%,
+                         bottom;
+  div.headings {
+    @include span-columns(4);
+
+  }
+  div.lists {
+    @include span-columns(4);
+  }
+  div.paragraphs {
+    @include span-columns(4);
+  }
+
+}
+
+div.container4 {
+  @include outer-container;
+  div.forms {
+    @include span-columns(6);
+
+  }
+  div.misc {
+    @include span-columns(6);
+
+  }
+}
+
+body {
+  margin: 0;
+}
+
+// .container {
+//   width: 600px;
+//   margin: 0 auto;
+// }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5em;
+}
